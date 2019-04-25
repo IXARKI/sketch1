@@ -155,9 +155,9 @@ main .question h1 {  text-align: center;  }
 
 main .question ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(1fr,340px));
+	grid-template-columns: repeat(auto-fill, minmax(340px,1fr));		/*minmax() = minmax(measure-unit,min-measure-unit)*/
 	grid-gap: 1em;
-	max-width: 700px;
+	max-width: 700px;	/*(grid-column-unid * number-cells) + grid-gap*/
 
 	justify-content: center;
 	margin: 0 auto;
